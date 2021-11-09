@@ -18,7 +18,7 @@ void number_of_products_div() {
         else if (cur % 3 == 0) ++n3;
         else ++n0;
     }
-    cout << n15 * (n15 - 1) + n15 * n5 + n15 * n3 + n15 * n0 + n5 * n3;
+    cout << n15 * (n15 - 1) / 2 + n15 * n5 + n15 * n3 + n15 * n0 + n5 * n3;
 }
 
 int main()
