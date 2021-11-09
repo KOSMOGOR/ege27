@@ -6,7 +6,7 @@ void number_of_products_div() {
     /**
     + 1. считать число
     + 2. увеличить один из счётчиков: % 15, % 5, % 3, не %
-    3. ответ: n15 * (n15 - 1) + n15 * n5 + n15 * n3 + n15 * n0 + n5 * n3
+    + 3. ответ: n15 * (n15 - 1) + n15 * n5 + n15 * n3 + n15 * n0 + n5 * n3
     */
     int n, cur;
     int n15(0), n5(0), n3(0), n0(0);
@@ -18,6 +18,7 @@ void number_of_products_div() {
         else if (cur % n3 == 0) ++n3;
         else ++n0;
     }
+    cout << n15 * (n15 - 1) + n15 * n5 + n15 * n3 + n15 * n0 + n5 * n3;
 }
 
 int main()
