@@ -5,12 +5,17 @@ using namespace std;
 
 int control_sum() {
     /**
-    1. ввести и сохранить числа
+    + 1. ввести и сохранить числа
     2. вывести все пары
     3. вместо пра вывести суммы
     4. проверить делимость сумм
     5. вывести только наибольшую
     */
+    int n;
+    cin >> n;
+    vector<int> numbers(n);
+    for (int(i); i < n; ++i)
+        cin >> numbers[i];
 }
 
 int main()
