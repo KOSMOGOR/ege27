@@ -1,9 +1,16 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 int control_sum() {
-    cout << "Hello world!" << endl;
+    /**
+    1. ввести и сохранить числа
+    2. вывести все пары
+    3. вместо пра вывести суммы
+    4. проверить делимость сумм
+    5. вывести только наибольшую
+    */
 }
 
 int main()
