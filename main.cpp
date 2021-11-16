@@ -20,6 +20,7 @@ int control_sum() {
         }
     }
     if (maxe == 0 || maxo == 0) cout << -1;
+    else cout << maxe + maxo;
 }
 
 int main()
