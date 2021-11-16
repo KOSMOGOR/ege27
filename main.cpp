@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int control_sum() {
+void control_sum() {
     /**
     + 1. ввести и сохранить числа
     + 2. вывести все пары
@@ -22,7 +22,7 @@ int control_sum() {
             int s = numbers[i] + numbers[j];
             if (s % 2 && s > maxx) maxx = s;
         }
-    cout << (s == -2000 ? -1 : s);
+    cout << (maxx == -2000 ? -1 : maxx);
 }
 
 int main()
