@@ -2,8 +2,12 @@
 
 using namespace std;
 
+int control_sum() {
+    cout << "Hello world!" << endl;
+}
+
 int main()
 {
-    cout << "Hello world!" << endl;
+    control_sum();
     return 0;
 }
