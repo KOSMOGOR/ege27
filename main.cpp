@@ -19,7 +19,7 @@ void control_sum() {
             if (num > maxe) maxe = num;
         }
     }
-    if (maxe == 0 || maxo == 0) cout << -1;
+    if (maxe == -1001 || maxo == -1001) cout << -1;
     else cout << maxe + maxo;
 }
 
