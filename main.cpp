@@ -8,8 +8,8 @@ void number_of_products_div() {
     + 2. увеличить один из счётчиков: % 15, % 5, % 3, не %
     + 3. ответ: n15 * (n15 - 1) + n15 * n5 + n15 * n3 + n15 * n0 + n5 * n3
     */
-    int n, cur;
-    int n15(0), n5(0), n3(0), n0(0);
+    long long n, cur;
+    long long n15(0), n5(0), n3(0), n0(0);
     cin >> n;
     for (int i(0); i < n; ++i) {
         cin >> cur;
