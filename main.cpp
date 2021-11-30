@@ -11,6 +11,11 @@ void min_sum_distance() {
     5. вместо вывода - сумма
     6. найти минимальную сумму
     */
+    int n;
+    cin >> n;
+    vector<int> numbers(n, 0);
+    for (int i(0); i < n; ++i)
+        cin >> numbers[i];
 }
 
 int main()
