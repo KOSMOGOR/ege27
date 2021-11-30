@@ -24,7 +24,7 @@ void min_sum_distance() {
             if (s < minn)
                 minn = s;
         }
-    cout << s;
+    cout << minn;
 }
 
 int main()
