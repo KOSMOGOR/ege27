@@ -8,7 +8,7 @@ void min_sum_distance() {
     + 2. вывести все числа
     + 3. вывести все пары
     + 4. вывести только достаточно далёкие пары
-    5. вместо вывода - сумма
+    + 5. вместо вывода - сумма
     6. найти минимальную сумму
     */
     int n;
@@ -18,7 +18,7 @@ void min_sum_distance() {
         cin >> numbers[i];
     for (int i(0); i < n - 4; ++i)
         for (int j(i + 4); j < n; ++j)
-            cout << numbers[i] << " " << numbers[j] << endl;
+            cout << numbers[i] + numbers[j] << endl;
 }
 
 int main()
