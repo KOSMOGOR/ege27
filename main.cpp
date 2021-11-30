@@ -9,16 +9,21 @@ void min_sum_distance() {
     + 3. вывести все пары
     + 4. вывести только достаточно далёкие пары
     + 5. вместо вывода - сумма
-    6. найти минимальную сумму
+    + 6. найти минимальную сумму
     */
     int n;
     cin >> n;
     vector<int> numbers(n, 0);
     for (int i(0); i < n; ++i)
         cin >> numbers[i];
+    int minn(numbers[0] + numbers[4]);
     for (int i(0); i < n - 4; ++i)
-        for (int j(i + 4); j < n; ++j)
-            cout << numbers[i] + numbers[j] << endl;
+        for (int j(i + 4); j < n; ++j) {
+            int s(numbers[i] + numbers[j]);
+            if (s < minn)
+                minn = s;
+        }
+    cout << s;
 }
 
 int main()
