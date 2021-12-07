@@ -10,9 +10,9 @@ void min_distance_sum_div() {
     + 3. вывести пары, разность индексов которых меньше 8
     + 4. вывести сумму чисел
     + 5. вывести суммы только кратные 28
-    6. вывести количество сумм
+    + 6. вывести количество сумм
     */
-    int n;
+    int n, count(0);
     cin >> n;
     vector<int> vec(0, n);
     for (int i(0); i < n; ++i) {
@@ -23,8 +23,9 @@ void min_distance_sum_div() {
             if (j - i < 8) {
                 int s = vec[i] + vec[j];
                 if (s % 28 == 0)
-                    cout << s << endl;
+                    ++count;
             }
+    cout << count;
 }
 
 int main()
