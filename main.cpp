@@ -2,8 +2,11 @@
 
 using namespace std;
 
+void min_distance_sum_div() {
+    cout << "Hello world!" << endl;
+}
+
 int main()
 {
-    cout << "Hello world!" << endl;
     return 0;
 }
