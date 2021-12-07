@@ -22,7 +22,8 @@ void min_distance_sum_div() {
         for (int j(0); j < n; ++j)
             if (j - i < 8) {
                 int s = vec[i] + vec[j];
-                cout << s << endl;
+                if (s % 28 == 0)
+                    cout << s << endl;
             }
 }
 
