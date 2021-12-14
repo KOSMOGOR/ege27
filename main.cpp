@@ -2,8 +2,12 @@
 
 using namespace std;
 
+void div_distance_max_sum() {
+    cout << "Hello world!" << endl;
+}
+
 int main()
 {
-    cout << "Hello world!" << endl;
+    div_distance_max_sum();
     return 0;
 }
