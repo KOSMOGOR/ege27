@@ -17,8 +17,9 @@ void div_distance_max_sum() {
     for (int i(0); i < n; ++i)
         cin >> vec[i];
     for (int i(0); i < n - 1; ++i)
-        for (int j(i); j < n; ++j)
+        for (int j(i + 1); j < n; ++j) {
             cout << vec[i] << " " << vec[j];
+        }
 }
 
 int main()
