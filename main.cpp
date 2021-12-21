@@ -10,20 +10,22 @@ void triples_mul_min_div() {
     + 3. вывод троек
     + 4. вывод произведений
     + 5. вывод произведений, делящихся на 4
-    6. вывод минимального произведения
+    + 6. вывод минимального произведения
     */
     int N;
     cin >> N;
     vector<int> vec(N, 0);
     for (int i(0); i < N; ++i)
         cin >> vec[i];
+    int min_p = 0;
     for (int i(0); i < N - 2; ++i)
         for (int j(i + 1); j < N - 1; ++j)
             for (int k(j + 1); k < N; ++k) {
                 int p = vec[i] * vec[j] * vec[k];
-                if (p % 4 == 0)
-                    cout << p << endl;
+                if (p % 4 == 0 && (p < min_p || min_p == 0))
+                    min_p = p;
             }
+    cout << min_p;
 }
 
 int main()
